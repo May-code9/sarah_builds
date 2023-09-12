@@ -6,7 +6,10 @@ module.exports = {
     extend: {
       colors: {
         'navy-blue-900': '#191919',
-        'btn-blue': '#329AD8'
+        'btn-blue': '#329AD8',
+        'card-color-300': '#056272',
+        'card-color-200': '#4B8E99',
+        'arrow-blue': '#399DDC'
       }
     }
   },

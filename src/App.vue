@@ -11,7 +11,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <RouterView class="max-w-md mx-auto shadow shadow-slate-400" />
+  <RouterView class="max-w-md mx-auto shadow shadow-slate-400 h-screen" />
 </template>
 
 <style scoped></style>

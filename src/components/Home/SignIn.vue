@@ -1,10 +1,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
+import AnotherCircleIcon from '../icons/AnotherCircleIcon.vue'
+import CircleIcon from '../icons/CircleIcon.vue'
+import CircleIcon2 from '../icons/CircleIcon2.vue'
 import EmailIcon from '../icons/EmailIcon.vue'
 import LockIcon from '../icons/LockIcon.vue'
 
 export default defineComponent({
-  components: { EmailIcon, LockIcon },
+  components: { EmailIcon, LockIcon, CircleIcon, AnotherCircleIcon, CircleIcon2 },
   setup() {
     //
   }
@@ -13,7 +16,16 @@ export default defineComponent({
 
 <template>
   <section class="flex flex-col justify-center h-screen px-5">
-    <section class="bg-navy-blue-900 rounded-3xl py-8 px-4 text-white">
+    <div class="absolute right-0 top-0">
+      <circle-icon></circle-icon>
+    </div>
+    <div class="absolute left-0 top-20">
+      <another-circle-icon></another-circle-icon>
+    </div>
+    <div class="absolute right-0 bottom-20 z-0">
+        <circle-icon-2></circle-icon-2>
+    </div>
+    <section class="bg-navy-blue-900 rounded-3xl py-8 px-4 text-white z-20">
       <div class="text-center">
         <div class="font-semibold text-2xl">Sign Up</div>
         <div class="text-slate-100 text-sm py-5 w-2/3 mx-auto">
